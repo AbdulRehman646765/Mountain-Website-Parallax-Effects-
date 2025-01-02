@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountain Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Chaudhary</a>
+      <ul>
+        <li>
+          <a href="#" class="active">Home</a>
+          <a href="#">Work</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <section class="main-sec">
+      <img src="img/stars.png" id="stars" />
+      <img src="img/moon.png" id="moon" />
+      <img src="img/mountains_behind.png" id="mountains_behind" />
+      <h2 id="text">Moon Light</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="img/mountains_front.png" id="mountains_front" />
+    </section>
+
+    <section class="sec" id="sec">
+      <h2>Parallax Scrolling Effects</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+        distinctio voluptatum corporis recusandae quas mollitia quasi explicabo!
+        Odio quam nobis, earum expedita quibusdam blanditiis nostrum accusamus
+        soluta sapiente minima quis! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Corporis quasi nihil dolor quidem hic nisi, maiores
+        sapiente recusandae nobis distinctio at! Nam sit quasi velit
+        exercitationem iusto quis reprehenderit itaque. Lorem ipsum dolor sit
+        amet consectetur, adipisicing elit. Saepe reprehenderit atque vero
+        voluptate maxime natus tenetur facere accusantium minus beatae
+        repellendus, quia voluptas aperiam perspiciatis! Provident id pariatur
+        corporis cum! <br /><br />
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+        distinctio voluptatum corporis recusandae quas mollitia quasi explicabo!
+        Odio quam nobis, earum expedita quibusdam blanditiis nostrum accusamus
+        soluta sapiente minima quis! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Corporis quasi nihil dolor quidem hic nisi, maiores
+        sapiente recusandae nobis distinctio at! Nam sit quasi velit
+        exercitationem iusto quis reprehenderit itaque. Lorem ipsum dolor sit
+        amet consectetur, adipisicing elit. <br /><br />
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+        distinctio voluptatum corporis recusandae quas mollitia quasi explicabo!
+        Odio quam nobis, earum expedita quibusdam blanditiis nostrum accusamus
+        soluta sapiente minima quis! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Corporis quasi nihil dolor quidem hic nisi, maiores
+        sapiente recusandae nobis distinctio at! Nam sit quasi velit
+        exercitationem iusto quis reprehenderit itaque. Lorem ipsum dolor sit
+        amet consectetur, adipisicing elit. Saepe reprehenderit atque vero
+        voluptate maxime natus tenetur facere accusantium minus beatae
+        repellendus, quia voluptas aperiam perspiciatis! Provident id pariatur
+        corporis cum! <br /><br />
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+        distinctio voluptatum corporis recusandae quas mollitia quasi explicabo!
+        Odio quam nobis, earum expedita quibusdam blanditiis nostrum accusamus
+        soluta sapiente minima quis! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Corporis quasi nihil dolor quidem hic nisi, maiores
+        sapiente recusandae nobis distinctio at! Nam sit quasi velit
+        exercitationem iusto quis reprehenderit itaque. Lorem ipsum dolor sit
+        amet consectetur, adipisicing elit. Saepe reprehenderit atque vero
+        voluptate maxime natus tenetur facere accusantium minus beatae
+        repellendus, quia voluptas aperiam perspiciatis! Provident id pariatur
+        corporis cum! <br /><br />
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+        distinctio voluptatum corporis recusandae quas mollitia quasi explicabo!
+        Odio quam nobis, earum expedita quibusdam blanditiis nostrum accusamus
+        soluta sapiente minima quis! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Corporis quasi nihil dolor quidem hic nisi, maiores
+        sapiente recusandae nobis distinctio at! Nam sit quasi velit
+        exercitationem iusto quis reprehenderit itaque. Lorem ipsum dolor sit
+        amet consectetur, adipisicing elit. <br /><br />
+      </p>
+    </section>
+
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountainsBehind = document.getElementById("mountains_behind");
+      let text = document.getElementById("text");
+      let button = document.getElementById("btn");
+      let mountainsFront = document.getElementById("mountains_front");
+
+      window.addEventListener("scroll", function(){
+        let value = window.scrollY;
+        stars.style.left = value + 0.25 + "px";
+        moon.style.top = value + -1.25 + "px";
+        mountainsBehind.style.top = value + 0.5 + "px";
+        mountainsFront.style.top = value + 0 + "px";
+        text.style.marginRight = value + 0 + "px";
+        text.style.marginTop = value + 1.5 + "px";
+
+      })
+    </script>
+  </body>
+</html>
